@@ -1,0 +1,19 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.DS_Store
+coverage/
+dist/
+.env
+.env.*
+
+# Logs
+*.log
+
+# OS
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
