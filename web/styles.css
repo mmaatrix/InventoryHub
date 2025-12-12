@@ -1,0 +1,15 @@
+:root { --bg: #0f172a; --fg: #e2e8f0; --accent: #22d3ee; --muted: #94a3b8; }
+* { box-sizing: border-box; }
+body { font-family: system-ui, sans-serif; background: var(--bg); color: var(--fg); margin: 0; padding: 0; }
+header { padding: 16px; border-bottom: 1px solid #1f2937; }
+header h1 { margin: 0 0 4px; }
+main { padding: 16px; display: grid; grid-template-columns: 1fr; gap: 16px; }
+.controls, .form, .list { background: #111827; padding: 16px; border-radius: 8px; }
+input { width: 100%; padding: 8px; margin: 6px 0; border-radius: 6px; border: 1px solid #374151; background: #0b1324; color: var(--fg); }
+button { padding: 8px 12px; margin-right: 8px; border: none; border-radius: 6px; background: var(--accent); color: #042c34; font-weight: 600; cursor: pointer; }
+button:hover { opacity: 0.9; }
+.actions { display: flex; gap: 8px; }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 8px; border-bottom: 1px solid #1f2937; }
+.message { margin-top: 8px; min-height: 20px; color: var(--muted); }
+.delete-btn { background: #fb7185; color: #1f2937; }

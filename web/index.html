@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>InventoryHub</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>InventoryHub</h1>
+      <p>Front-end integrated with the InventoryHub API</p>
+    </header>
+    <main>
+      <section class="controls">
+        <input id="search" type="text" placeholder="Search by name or SKU" />
+        <button id="refresh">Refresh</button>
+      </section>
+      <section class="form">
+        <h2>Create / Update Item</h2>
+        <input id="item-id" type="text" placeholder="ID (for update)" />
+        <input id="name" type="text" placeholder="Name" />
+        <input id="sku" type="text" placeholder="SKU" />
+        <input id="quantity" type="number" placeholder="Quantity" />
+        <div class="actions">
+          <button id="create">Create</button>
+          <button id="update">Update</button>
+        </div>
+        <div id="message" class="message"></div>
+      </section>
+      <section class="list">
+        <h2>Items</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>SKU</th>
+              <th>Quantity</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="items"></tbody>
+        </table>
+      </section>
+    </main>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
